@@ -1,0 +1,1502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/myPage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#F4996B"
+            android:gravity="center"
+            android:text="제외할 재료 선택"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:gravity="center|left"
+                    android:text="곡류"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/rice_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/circle_minus" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/riceList"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/rice1"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:onClick="btn_onclick"
+                        android:background="@drawable/selected_color"
+                        android:text="백미" />
+
+                    <Button
+                        android:id="@+id/rice2"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="현미" />
+
+                    <Button
+                        android:id="@+id/rice3"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="찹쌀" />
+
+                    <Button
+                        android:id="@+id/rice4"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="수수" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/rice5"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="콩" />
+
+                    <Button
+                        android:id="@+id/rice6"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="팥" />
+
+                    <Button
+                        android:id="@+id/rice7"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="보리" />
+
+                    <Button
+                        android:id="@+id/rice8"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="조" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/rice9"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="기장" />
+
+                    <Button
+                        android:id="@+id/rice10"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="율무" />
+
+                    <Button
+                        android:id="@+id/rice11"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="녹두" />
+
+                    <Button
+                        android:id="@+id/rice12"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="귀리" />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nuts"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:gravity="center|left"
+                    android:text="견과류"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/nuts_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/circle_minus" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/nutsList"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/nuts1"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="땅콩" />
+
+                    <Button
+                        android:id="@+id/nuts2"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="아몬드" />
+
+                    <Button
+                        android:id="@+id/nuts3"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="호두" />
+
+                    <Button
+                        android:id="@+id/nuts4"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="잣" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/nuts5"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="밤" />
+
+                    <Button
+                        android:id="@+id/nuts6"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="피스타치오" />
+
+                    <Button
+                        android:id="@+id/nuts7"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="호박씨" />
+
+                    <Button
+                        android:id="@+id/nuts8"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="해바라기씨" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/nuts9"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="피칸" />
+
+                    <Button
+                        android:id="@+id/nuts10"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="헤이즐넛" />
+
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fruits"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:gravity="center|left"
+                    android:text="과일"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/fruits_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/circle_minus" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/fruitsList"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/fruits1"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="사과" />
+
+                    <Button
+                        android:id="@+id/fruits2"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="배" />
+
+                    <Button
+                        android:id="@+id/fruits3"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="귤" />
+
+                    <Button
+                        android:id="@+id/fruits4"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="감" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/fruits5"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="키위" />
+
+                    <Button
+                        android:id="@+id/fruits6"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="토마토" />
+
+                    <Button
+                        android:id="@+id/fruits7"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="자두" />
+
+                    <Button
+                        android:id="@+id/fruits8"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="복숭아" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/fruits9"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="수박" />
+
+                    <Button
+                        android:id="@+id/fruits10"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="메론" />
+
+                    <Button
+                        android:id="@+id/fruits11"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="참외" />
+
+                    <Button
+                        android:id="@+id/fruits12"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="딸기" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/fruits13"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="블루베리" />
+
+                    <Button
+                        android:id="@+id/fruits14"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="바나나" />
+
+                    <Button
+                        android:id="@+id/fruits15"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="파인애플" />
+
+                    <Button
+                        android:id="@+id/fruits16"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="레몬" />
+                </TableRow>
+
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/vega"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:gravity="center|left"
+                    android:text="채소"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/vega_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/circle_minus" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/vegaList"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/vega1"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="감자" />
+
+                    <Button
+                        android:id="@+id/vega2"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="콩나물" />
+
+                    <Button
+                        android:id="@+id/vega3"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="고구마" />
+
+                    <Button
+                        android:id="@+id/vega4"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="당근" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/vega5"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="오이" />
+
+                    <Button
+                        android:id="@+id/vega6"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="고추" />
+
+                    <Button
+                        android:id="@+id/vega7"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="양파" />
+
+                    <Button
+                        android:id="@+id/vega8"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="마늘" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/vega9"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="파" />
+
+                    <Button
+                        android:id="@+id/vega10"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="배추" />
+
+                    <Button
+                        android:id="@+id/vega11"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="무" />
+
+                    <Button
+                        android:id="@+id/vega12"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="시금치" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/vega13"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="나물" />
+
+                    <Button
+                        android:id="@+id/vega14"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="상추" />
+
+                    <Button
+                        android:id="@+id/vega15"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="깻잎" />
+
+                    <Button
+                        android:id="@+id/vega16"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="버섯류" />
+                </TableRow>
+
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/meat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:gravity="center|left"
+                    android:text="육류"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/meat_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/circle_minus" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/meatList"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/meat1"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="소고기(구이)" />
+
+                    <Button
+                        android:id="@+id/meat2"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="소고기(국거리)" />
+
+                    <Button
+                        android:id="@+id/meat3"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="소고기(찜)" />
+
+                    <Button
+                        android:id="@+id/meat4"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="소고기(스테이크)" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/meat5"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="삼겹살" />
+
+                    <Button
+                        android:id="@+id/meat6"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="돼지고기 안심" />
+
+                    <Button
+                        android:id="@+id/meat7"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="돼지고기 등심" />
+
+                    <Button
+                        android:id="@+id/meat8"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="닭고기" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/seafood"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:gravity="center|left"
+                    android:text="해산물"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/seafood_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/circle_minus" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/seafoodList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/seafood1"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="생선" />
+
+                    <Button
+                        android:id="@+id/seafood2"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="오징어" />
+
+                    <Button
+                        android:id="@+id/seafood3"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="새우" />
+
+                    <Button
+                        android:id="@+id/seafood4"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="문어" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/seafood5"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="게" />
+
+                    <Button
+                        android:id="@+id/seafood6"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="전복" />
+
+                    <Button
+                        android:id="@+id/seafood7"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="조개류" />
+
+                    <Button
+                        android:id="@+id/seafood8"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="미역" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/egg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:gravity="center|left"
+                    android:text="계란/유제품"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/egg_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/circle_minus" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/eggList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/egg1"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="치즈" />
+
+                    <Button
+                        android:id="@+id/egg2"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="우유" />
+
+                    <Button
+                        android:id="@+id/egg3"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="버터/마가린" />
+
+                    <Button
+                        android:id="@+id/egg4"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="생크림/휘핑크림" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/egg5"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="연유" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/can"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:gravity="center|left"
+                    android:text="통조림"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/can_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/circle_minus" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/canList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/can1"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="참치" />
+
+                    <Button
+                        android:id="@+id/can2"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="햄" />
+
+                    <Button
+                        android:id="@+id/can3"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="골뱅이" />
+
+                    <Button
+                        android:id="@+id/can4"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="번데기" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/can5"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="옥수수콘" />
+
+                    <Button
+                        android:id="@+id/can6"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="고등어/꽁치통조림" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/salt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:gravity="center|left"
+                    android:text="조미료"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/salt_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/circle_minus" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/saltList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/salt1"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="설탕" />
+
+                    <Button
+                        android:id="@+id/salt2"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="소금" />
+
+                    <Button
+                        android:id="@+id/salt3"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="후추" />
+
+                    <Button
+                        android:id="@+id/salt4"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="와사비" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/salt5"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="다진마늘" />
+
+                    <Button
+                        android:id="@+id/salt6"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="고추가루" />
+
+                    <Button
+                        android:id="@+id/salt7"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="된장" />
+
+                    <Button
+                        android:id="@+id/salt8"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="고추장" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/salt9"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="올리브유" />
+
+                    <Button
+                        android:id="@+id/salt10"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="청국장" />
+
+                    <Button
+                        android:id="@+id/salt11"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="참기름" />
+
+                    <Button
+                        android:id="@+id/salt12"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="들기름" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/salt13"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="기타식용유" />
+
+                    <Button
+                        android:id="@+id/salt14"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="밀가루" />
+
+                    <Button
+                        android:id="@+id/salt15"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="부침가루" />
+
+                    <Button
+                        android:id="@+id/salt16"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/selected_color"
+                        android:onClick="btn_onclick"
+                        android:text="빵가루" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#F4996B"
+        android:text="선택 완료"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+
+</LinearLayout>

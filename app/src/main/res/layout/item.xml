@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5CCFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!-- car의 name을 담는 텍스트뷰 -->
+        <TextView
+            android:id="@+id/car_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:gravity="center" />
+
+        <!-- 구분선 -->
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:textSize="30dp"
+            android:background="#ffffff" />
+
+    </LinearLayout>
+
+    <!-- item들을 구분해주기 위한 구분선 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#ffffff"/>
+</LinearLayout>

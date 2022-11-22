@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "203714403930",
+    "project_id": "graduateproject-37534",
+    "storage_bucket": "graduateproject-37534.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203714403930:android:a4b87678ed87ae568c4263",
+        "android_client_info": {
+          "package_name": "com.example.myhomefood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203714403930-ffidvg5ol2s9e853e5bfj360c2u719c8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQCBD8jGycMUARCnywfPcbrmxvNdlcxSw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203714403930-ffidvg5ol2s9e853e5bfj360c2u719c8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
